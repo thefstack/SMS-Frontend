@@ -47,7 +47,6 @@ const UserProvider = ({ children }) => {
         document.cookie = 'token=; Max-Age=0; path=/;'
       dispatch({type:"SET_FALSE_LOGIN"})
     }catch(error){
-      console.log(error)
       dispatch({type:"SET_FALSE_LOGIN"})
     }
   }
