@@ -44,7 +44,7 @@ const ListView = (props) => {
         <table>
           <thead>
             <tr>
-              <th>User Id</th>
+              <th>username</th>
               <th>Role</th>
               <th>Actions</th>
             </tr>
@@ -55,7 +55,7 @@ const ListView = (props) => {
               <td>{user.username}</td>
                 <td>{user.role}</td>
                 <td className="view-x-btn">
-                  <Link to={`/admin/user/${user.id}`} className="view-btn">View</Link>
+                  <Link to={`/admin/user/${user.username}`} className="view-btn">View</Link>
                   <button
                     style={{ backgroundColor: "red" }}
                     className="view-btn"

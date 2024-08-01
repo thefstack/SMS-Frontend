@@ -9,7 +9,7 @@ import reducer from "../Reducer/authReducer";
 
 const AppContext = createContext();
 
-let API = "http://localhost:5000/";
+let API = "https://rsmeds-server.onrender.com/";
 
 let initialState = {
   isLoading: false,

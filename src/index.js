@@ -53,17 +53,25 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <AdminDashboard />,
+        element: <StudentProvider>
+        <TeacherProvider>
+          <SubjectProvider>
+            <ClassProvider>
+              <AdminDashboard />
+            </ClassProvider>
+          </SubjectProvider>
+        </TeacherProvider>
+      </StudentProvider>,
         errorElement: <ErrorPage />,
       },
       {
         path: "student",
-        element: <AdminStudent />,
+        element:<AdminStudent />,
         errorElement: <ErrorPage />,
       },
       {
         path: "student/:id",
-        element: <ViewStudent />,
+        element:<ViewStudent />,
         errorElement: <ErrorPage />,
       },
 

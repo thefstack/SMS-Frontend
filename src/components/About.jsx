@@ -28,7 +28,7 @@ const About = () => {
       </div>
       <div className="history">
         <h1>History</h1>
-        <p>Founded in 2017 by Alok Sharma under the auspices of Rajendra Sharma Memorial Educational and Development Society, R S Memorial School has a rich history of academic and extracurricular achievements. <br /> Over the years, we have grown from a small community school to a renowned institution known for its dedication to holistic education and student success.</p>
+        <p>Founded in 2014 by Alok Sharma under the auspices of Rajendra Sharma Memorial Educational and Development Society. <br /> Over the years, we have grown from a small community school to a renowned institution known for its dedication to holistic education and student success.</p>
       </div>
       <div className="community">
         <h1>Community and <spa className="sec-color">Parent Involvement</spa></h1>

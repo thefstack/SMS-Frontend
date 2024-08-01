@@ -6,11 +6,10 @@ import {
   useReducer,
 } from "react";
 import reducer from "../Reducer/userReducer";
-import Cookie from "js-cookies"
 
 const AppContext = createContext();
 
-let API = "http://localhost:5000/";
+let API = "https://rsmeds-server.onrender.com/";
 
 let initialState = {
   isLoading: false,
@@ -62,11 +61,11 @@ const UserProvider = ({ children }) => {
     }
   }
   const getUser = async (url) => {
-    await dispatch({type:"SET_LOADING"})
+    dispatch({type:"SET_LOADING"})
     try {
       const res = await axios.get(url,{withCredentials:true});
       const users = await res.data;
-      await dispatch({ type: "SET_USER_DATA", payload: users });
+      dispatch({ type: "SET_USER_DATA", payload: users });
     } catch (error) {
       dispatch({ type: "API_ERROR" });
     }

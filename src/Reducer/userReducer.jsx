@@ -5,6 +5,7 @@ const UserReducer = (state, action) => {
           ...state,
           isLoading: false,
           userData: action.payload,
+          isError:false
         };
       }
       case "SET_SINGLE_USER": {  
@@ -19,6 +20,7 @@ const UserReducer = (state, action) => {
           ...state,
           isLoading: false,
           isLogin:1,
+          isError:false,
           username:action.payload.username
         };
       }
