@@ -10,7 +10,6 @@ import reducer from "../Reducer/classReducer";
 const AppContext = createContext();
 
 let API = "https://rsmeds-server.onrender.com/";
-
 let initialState = {
   isLoading: false,
   isError: false,
